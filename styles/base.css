@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #133b5c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2f2f2f;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.card h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #133b5c;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card li a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.card li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #133b5c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.2rem;
+}
+
+#lastModified {
+  color: #f4d03f;
+}
