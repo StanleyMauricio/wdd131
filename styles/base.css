@@ -101,3 +101,10 @@ footer p {
 #lastModified {
   color: #f4d03f;
 }
+h1 {
+  font-size: 1.5rem;         /* más pequeño que el por defecto (~2em) */
+  text-align: center;        /* centrado */
+  margin: 0.5rem 0 1rem 0;   /* menos espacio alrededor */
+  font-family: 'Montserrat', sans-serif;
+  color: #525c13;            /* opcional: en tu esquema de color */
+}
