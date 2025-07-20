@@ -1,0 +1,96 @@
+:root {
+  --color-red: #c62828;
+  --color-white: #ffffff;
+  --color-green: #2e7d32;
+  --color-gray: #e0e0e0;
+  --font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-gray);
+  color: black;
+  font-family: var(--font-family);
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.data-box {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  background-color: rgba(46, 125, 50, 0.9);
+  color: var(--color-white);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.weather-box {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: rgba(46, 125, 50, 0.9);
+  color: var(--color-white);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.weather-box h2::after {
+  content: " ⛅";
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.weather {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.weather h2 {
+  display: inline-block;
+  position: relative;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+footer {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Media Query: en móviles las cajas se ponen debajo */
+@media (max-width: 600px) {
+  .data-box,
+  .weather-box {
+    position: static;
+    margin: 0.5rem auto;
+    display: block;
+  }
+
+  .mobile-icon {
+    display: inline-block;
+    width: 40px;
+    height: auto;
+  }
+
+  .weather-box h2::after {
+    content: "";
+  }
+}
