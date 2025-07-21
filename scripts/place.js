@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       0.6215 * t -
       11.37 * Math.pow(v, 0.16) +
       0.3965 * t * Math.pow(v, 0.16)
-    ).toFixed(1) + " °C";
+    ).toFixed(1) + " °C";
   }
 
   if (temp <= 10 && wind > 4.8) {

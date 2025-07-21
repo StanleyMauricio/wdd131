@@ -75,7 +75,6 @@ footer {
   line-height: 1.4;
 }
 
-/* Media Query: en móviles las cajas se ponen debajo */
 @media (max-width: 600px) {
   .data-box,
   .weather-box {
