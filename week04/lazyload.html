@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy load Demostration</title>
+    <meta name="description" content="Lazy loading images to improve performance">
+    <meta name="author" content="Stanley Mauricio Carbajal">
+     <link rel="stylesheet" href="styles/lazyload.css">  
+  
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Images</h1>
+    </header>
+    <main>
+       <picture>
+      <img src="//picsum.photos/200/300/" alt="picsum images"loading="lazy" width="200" height="300">
+       </picture>
+       <p>lorem100</p>
+       <picture><img src="//picsum.photos/200/400/" alt="picsum images"></picture>
+       <picture><img src="//picsum.photos/200/500/" alt="picsum images"></picture>
+       <picture><img src="//picsum.photos/200/550/" alt="picsum images"></picture>
+       <picture><img src="//picsum.photos/200/600/" alt="picsum images"></picture>
+       <picture><img src="//picsum.photos/200/450/" alt="picsum images"></picture>
+    </main>
+     <footer>
+        <p>©<span id="currentyear"></span> | 🏍️ Stanley Mauricio 🎮 Huancayo, Peru</p>      
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
