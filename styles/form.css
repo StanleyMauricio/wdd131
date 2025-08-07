@@ -1,3 +1,86 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #3d004d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+form {
+  background-color: #e5d6e8;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+select,
+input[type="date"],
+textarea,
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+legend {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+
+.optional {
+  font-weight: normal;
+  font-style: italic;
+  color: #555;
+}
+
+input[type="submit"] {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ccc;
+  
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 footer {
   background-color: #3c0066;
   color: white;
@@ -8,4 +91,13 @@ footer {
 
 footer p {
   margin: 0.2rem 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px; 
+}
+
+fieldset label {
+  display: inline-block;
+  margin-bottom: 4px;
 }
