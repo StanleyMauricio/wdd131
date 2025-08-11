@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "Instagram", url: "https://instagram.com" }
   ];
 
-  // Mostrar año actual
+  // show year
   function updateYear() {
     if (currentYearSpan) {
       currentYearSpan.textContent = new Date().getFullYear();
     }
   }
 
-  // Mostrar última modificación
+  // show las modified
   function showLastModified() {
     if (lastModifiedParagraph) {
       const modified = new Date(document.lastModified);
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Guardar y mostrar visitas
+  //saved and show visits
   function handleVisits() {
     let visits = Number(localStorage.getItem("visits")) || 0;
     visits++;
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Mostrar enlaces sociales dinámicamente
+  // show social links dynamically
   function displaySocialLinks() {
     const container = document.querySelector(".socialmedia");
     if (container) {
@@ -56,9 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // ====== EJECUCIÓN ======
   updateYear();
   showLastModified();
   handleVisits();
-  // displaySocialLinks(); // si quieres reemplazar los íconos por texto
+  
 });
