@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const today = new Date();
   if (currentYearSpan) {
     currentYearSpan.textContent = today.getFullYear();
-  }
+  } 
 
   if (lastModifiedParagraph) {
     const modified = new Date(document.lastModified);
